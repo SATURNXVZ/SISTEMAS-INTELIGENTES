@@ -1,1 +1,52 @@
+IAS GENERATIVAS (CONTINUAÇÃO)
+
+PROLOG: Linguagem que era usada para IAs, hoje em dia não se aplica mais, pois qualquer linguagem é possivel criar uma IA;
+
+Como pensar em fazer uma IA sem saber como funciona uma IA?
+
+SE (Sistemas Especialistas): modelamos um sistema segundo a operação de um especialista;
+Nós usamos o modelo clássico, que não é o inteligente;
+
+MODELO CLÁSSICO: Problema é dividido em Conjunto de Regras e Padrões, apartir daí se forma o modelo, aonde extraímos as variáveis;
+Até implementar a solução;
+
+MODELO INTELIGENTE (IA): Modelo matemático que convertido, resolverá o problema, com o próprio sistema criando o modelo clássico;
+O modelo inteligente precisa de testes, ou seja, aprendizado, aí que entra a fase de abrangência de dados;
+
+SISTEMAS BASEADOS EM CONHECIMENTO (SBC): Foca em resolver o problema do conhecimento volátil (perene, ou que se perde algum dia), criar um sistema que copia o conhecimento de alguém,
+como um mímico;
+
+SBC só pode ser considerado um SE se o sistema for voltado para somente um domínio específico, com alto grau de especialização;
+Porém, IA não deve ser uma SE, pois ela deve ser voltada para MULTIDOMINIOS e não somente um;
+
+Nem todos os sistemas inteligentes são iguais;
+
+Em todo SBC é necessário:
+1. Como resolver tal problema? Explique para seu sistema;
+2. Conheça sobre o problema e o domínio dele;
+3. 
+
+A estrutura de uma SBC é:
+1. Núcleo do SBC: Responsável pelo mecanismo de inferência no sistema, ele que vai fazer sim ou não;
+2. Módulo Coletor de Dados: Ativa o motor de inferência, puxando alguma outra regra, usando a interação com o usuário, obtendo as informações sobre o problema;
+3. Motor de Inferência: Percorre o conhecimento obtidas pelo Módulo Coletor, ele manipula esses dados;
+
+Interaja com a base de conhecimento e faça referência ao MOTOR DE INFERÊNCIA 
+
+Existem 2 tipos de linhas de raciocínio, o PROGRESSIVO (Percorre todo o conhecimento) e REGRESSIVO (Ele pode não te dar uma resposta exata, mas é mais rápido);
+
+PROGRESSIVO: Pega tudo o que tem e tenta fazer uma sopa, alguma vai dar certo;
+REGRESSIVO: procura pelo conjunto de regras se alguma delas atinge o objetivo desejado, se tem as ferramentas necessárias dentro do conhecimento, "aonde quero chegar?";
+Defina um objetivo e procure por regras que levem a este objetivo; Após isso crie submetas com base nas regras sendo positivas ou não; 
+Continue usando RECURSIVIDADE até que todas as regras sejam respondidas;
+
+VANTAGENS DO REGRESSIVO: Eficiente onde existem muitas regras e poucas metas, pois evita perguntar todas as regras;
+Ideal para sistemas de diagnóstico, 
+
+
+
+
+
+
+
 
