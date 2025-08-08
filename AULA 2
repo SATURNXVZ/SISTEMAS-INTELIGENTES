@@ -41,12 +41,37 @@ Defina um objetivo e procure por regras que levem a este objetivo; Após isso cr
 Continue usando RECURSIVIDADE até que todas as regras sejam respondidas;
 
 VANTAGENS DO REGRESSIVO: Eficiente onde existem muitas regras e poucas metas, pois evita perguntar todas as regras;
-Ideal para sistemas de diagnóstico, 
+Ideal para sistemas de diagnóstico;
 
+PROGRESSIVO: Tem os dados como base, ele parte nos fatos obtidos no conhecimento e os utiliza percorrendo todo o conhecimento tentando chegar ao obvjetivo;
+PASSOS: 
+Fatos Conhecidos: começa com um conjunto de fatos, informações que sçao verdadeiros;
 
+Disparo de regras: Quando a regra é inferida, é adicionada como um fato conhecido, ou seja, se não foi inferida, não é conhecida, este processo acontece com todos os fatos;
 
+VANTAGENS DO PROGRESSIVO: Explora todos os dados, sem disperdicar nenhum;
+útil em monitoramento, automação de processos e sensores industriais;
 
+MÓDULO DE EXPLICAÇÃO: Meu sistema deve justificar o porquê de cada ação, o que acontece e porquê;
+Funciona em conjunto com a Memória de Trabalho;
 
+BASE DE CONHECIMENTO: É o centro da SE, nela é decidido como vou organizar regras e padrões para que o SE possa raciocinar ao ponto de resolver;
+A resolução é baseada em regras, essas que são a ponte para uma resposta ou não;
+O mais comum é a SE não saber a resposta;
+
+FATO: Estado de mundo;
+REGRAS: Atencedentes de consequência
+HEURÍSTICA: Estratégia em tentativa de diminuir o processo REGRESSIVO, já que o Progressivo percorre tudo;
+
+BC (base de conhecimento): 
+
+ETAPA DE DESENVOLVIMENTO DE SBC: 
+Identificação;
+Viabilidade: Vale a pena fazer tal coisa? Precisa?
+Aquisição de conhecimento;
+Formalização: Identificar os fatos e então construir as regras;
+Implementação: Construir a BC;
+Refinamento: Retorno para a aquisição, repetindo os passos para um SBC mais afinado;
 
 
 
