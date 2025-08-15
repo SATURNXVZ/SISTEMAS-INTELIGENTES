@@ -4,4 +4,51 @@ Entre eles, veja e simule o caminho que o sistema deve seguir, para ter uma idei
 
 Crie bases de conhecimento baseados em fato, regra e heurística;
 
+Fatos: Informações básicas que o sistema possui sobre o estado de mundo, ex:
+Todas as informações de um paciente;
+
+Regras: Instruções que ligam uma condição, ação ou conclusão, ex:
+Se o paciente tem febre, faça um exame para gripe;
+
+Heurística: Método usado para buscar melhorias, em cima dos fatos existem as regras, e juntando os 2, procura melhorias, ex:
+Se o paciente tiver febre, pode ser gripe, ou outras mais, pegue mais sintomas para ter certeza;
+
+ETAPAS DE DESENVOLVIMENTO DE SBCs
+1: Identificação: Ver qual é o problema;
+2: Viabilidade: Todo problema é viável, desde que o especialista certo esteja junto;
+3: Aquisição: Ganhar conhecimento, sentar e estudar, aprender;
+4: Formalização: Depois de criar a base de conhecimento, perguntas surgirão;
+5: Implementação: Escrever o código em si;
+A etapa 5 é a ponta final, ou você terá que fazer desde o passo 3, ou tera uma base de conhecimento e um Sistema Baseado em Conhecimento pronto;
+
+GPT é um exemplo, demorou anos, passou por muitos anos para se tornar uma IA;
+Da mesma forma é um atleta, treina por anos até conseguir quebrar um recorde;
+
+  Software Expert Sinta;
+Foi descontinuado, mas é excelente para entendimento das SBCs;
+
+Todo sistema funciona da mesma forma;
+Defina o problema claramente;
+Crie um conjunto de regras a partir desse problema;
+Então você terá desde o estado inicial até o final;
+
+ESTADO INICIAL: Aonde começo, o estado em que se encontra;
+ESTADO FINAL: Resultado do problema, o que você deseja que se torne;
+
+ou seja, aonde eu estou, até aonde eu quero chegar;
+
+EX:
+Regra 1: Se a previsão do tempo = chuva; então chuva = true;
+Regra 2: Se viu a meteorologia - sim e praias vazias = sim; Então tempo = chuva;
+Regra 3: Se local de passeio = Cachoeira; Então distância > 5;
+Regra 4: Se chovendo = sim; Distãncia > 5; Condição fisica = ruim; Então transporte = Carro;
+Rehra 5: Se chovendo = não; Distância < 5; Condição física = boa; Então transporte = a pé;
+Regra 6: Se jogou bola = Sim; Então condição física = ruim;
+Regra 7: se amigos ligaram = true; Então jogou bola = true;
+
+EXTRAS:
+Regra 9: Se amigos ligaram = False; Então jogou bola = False;
+Regra 10: Se jogou bola = false; Então condição fisica = boa;
+Regra 11: Se previsão do tempo < 100%; Então chuva = 50% true; 50% false;
+Regra 12: Se chuva = true e condição fisica = boa; Então transporte = a pé com capa;
 
