@@ -1,0 +1,61 @@
+MÉTODOS DE BUSCA:
+
+Muito rica, Sistemas Inteligentes usam muito métodos de busca, por isso ela se torna importantíssima;
+Vamos ver vários algoritmos que utilizarão métodos de busca;
+Precisamos entender bem como elas funcionam, pois isso é o que determina conseguir replicar ou não;
+
+Mètodos de Busca são:
+Procurar um objeto tal, em uma estrutura tal;
+
+Mét. de Busca tem muita relação com grafos.
+Robos aspiradores usam muito métodos de busca;
+
+Existe tipos, um deles é o SLAM:
+O robô grava o mapeamento, calcula os pontos e então faz a limpeza;
+
+HIBRIDA:
+SLAM + IA, ele aprende com erros, com mudanças do mapeamento;
+
+DFS(Busca em Profundidade):
+vai até o fim e volta, e vice-versa;
+
+BFS(Busca em Largura):
+O robô vai até o fim da sala, então volta para limpar ela, após percorrer toda a sala;
+
+A*:
+Método de Busca baseada em Heurística;
+Unity usa A*;
+
+DIJKSTRA
+
+Métodos de Busca são Técnicas de IA para assuntos de alta complexidade;
+O espaço de busca é o que determina se o método de Busca será complexo ou não, se terá bastante nós = complexidade alta;
+
+Para entender, precisamos aprender como criar em espaços de busca pequenos, então ir para os grandes;
+
+Métodos de Busca precisam:
+SER GENERALIZADOS: Não se limitar a um caso específico;
+SEJA CLARO: Código precisa ser representado de forma clara;
+MODIFICADO COM FACILIDADE: As regras precisam ser flexíveis, pois podem acontecer problemas com o tempo;
+
+ESTRATÉGIAS DE BUSCA:
+Busca Cega: Não recebe informações nenhuma, apenas entrega um elemento com base em movimentos anteriores;
+Busca Heurística: Usando Heurística procura o melhor nó, seja distância, valor ou etc;
+
+Busca Cega se ramifica:
+DFS e BFS; 
+A*;
+
+Busca Heurística também se ramificou:
+
+
+TODAS AS ESTRATÉGIAS DE BUSCA DEVEM SEGUIR ESSAS ETAPAS:
+1- Definição do PROBLEMA: Dizer o que tenho que fazer, deixar claro o que precisa-se fazer;
+
+
+
+
+
+
+
+
