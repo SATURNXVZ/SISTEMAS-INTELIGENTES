@@ -1,0 +1,42 @@
+BUSCA CEGA: Não recebe informações sobre o problema, apenas o "aonde estou e aonde quero chegar";
+
+BUSCA EM LARGURA(BFS = Breadth-first Search): Procura por conexões entre nós, esses que serão vizinhos, e assim por diante;
+BL procura expandir os filhos do nó pai, gerando uma lista de filhos;
+
+EX: Após ir para o nó 1, ele vai para o 2, se o 2 não for o desejado, ele irá para o vizinho, que é o 3;
+
+EXERCÍCIO: [b,a] [c, a] [g, a]
+        [r,b,a] [p,c,a] [i,g,a]
+        [p,c,a] [i,g,a] [h,r,b,a]
+        [i,g,a] [h,r,b,a] [p,c,a]
+
+
+BUSCA EM PROFUNDIDADE: Procura até o último elemento, como se cavasse até chegar ao poço, para então procurar o que precisa;
+Busca um caminho e o percorre até o final, então ele volta e procura por outra rua;
+
+EX: Após escolher uma rua, ele segue até o final da mesma, caso a casa não seja encontrada, ele volta tudo, e então escolhe outra rua, assim por diante;
+
+EXERCÍCIO 1:
+[a,b,f,b,g,h,j,h,l] OU
+
+[a]
+[a,b]
+[a,b,f]
+[a,b,f,b]
+[a,b,f,b,g]
+[a,b,f,b,g,j]
+[a,b,f,b,g,j,h]
+[a,b,f,b,g,j,h,l]
+
+EXERCÍCIO 2:
+[a]
+ab
+abf
+abfb
+abfbg
+abfbgh
+abfbghj
+abfbghjl
+abfbghjhl
+
+
