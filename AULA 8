@@ -1,0 +1,45 @@
+REDES NEURAIS:
+Segundo a SBC (sociedade brasileira de computação), 70% dos artigos publicados são sobre redes neurais, ou seja, existe muita pesquisa em cima disso, usando classificações de imagens e dados;
+
+Redes Neurais é muito vasto, por isso veremos pouca coisa.
+
+Quantos neurônios o ser humano tem?
+86 Bilhões;
+
+Cada neurônio se conecta com outros neurônios, o modelo de Rede Neural é um modelo matemático, aonde eu calculo aonde a transmissão de neurônios acontece.
+86 bilhões faz em média 7mil pulsos elétricos para o cérebro, ou seja, são muitos.
+
+IA usa como base, Redes Neurais, o que se torna extremamente complexo.
+
+A conexão de blocos básicos denominados "Neurônios Artificiais", aonde seu objetivo era simular a habilidade humana.
+Vale ressaltar que os modelos matemáticos são pesados computacionalmente falando, necessitando de um processamento melhor e mais poderoso.
+
+Todos os cálculos da rede neural era feito na mão até 2010, até o nascimento do python, machine learning e framework.
+
+O que é um neurônio? 
+É a ativação de um estímulo, que percorre desde o terminal do Axônio até o corpo, na qual, dependendo de sua força, pode ser ativado ou não.
+Essa reação vai provocar alguma reação, piscar, mexer o dedo e etc.
+
+E Neurônio artificial?
+Este faz parte da Rede Neural, criada por um matemático e um psicólogo.
+Quando mais um impulso é potencializado, mais neurônios eu ativo conforme meu programa avança.
+
+O mais difícil é rodar e configurar os parâmetros, até conseguir rodar até o resto da vida.
+
+PERCEPTRON:
+O primeiro foi criado em 1958, por Franck Rosenblatt, psicólogo, mas a ideia em ci foi criada em 1943, por Mcculloch and Pitts, mas que não evoluiu.
+
+A "fórmula" consiste em:
+Várias entradas se somam, entram em uma outra função, até chegar a -1 até 1, dizendo se o neurônio ativa ou não.
+
+w1 * x1 - w2 * x2: somatória da entrada * peso dela.
+se > 0 = 1
+se < 0 = 0
+
+
+
+
+
+
+
+
