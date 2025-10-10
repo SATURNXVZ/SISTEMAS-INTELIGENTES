@@ -36,10 +36,55 @@ w1 * x1 - w2 * x2: somatória da entrada * peso dela.
 se > 0 = 1
 se < 0 = 0
 
+Toda Rede Neural tem entrada, processamento e saída.
+Ex: o sistema recebe 3 entradas, significam 3 candidatos, aonde existem 2 analisadores;
+se eu for analisar o candidato 1, os 2 analisadores devem analisar, ou seja;
+Todos se comunicam com os analisadores, ou neurônios.
+
+Após fazer a somatória (x1 * w1 + x2 * w2 + x3 * w3), entramos com a FUNÇÃO DE ATIVAÇÃO, a qual pode ser usada a RELU (mais voltada para CNNs);
+
+ÉPOCAS:
+Passagem completa por todo o treinamento, ou seja, ao treinar uma rede neural, precisaremos de uma rede de dados.
+Durante uma época, todos os exemplos são apresentados à Rede Neural, com seus pesos ajustados com base nos erros das saídas esperadas.
+Esta rede de dados vai definir o quão bom sua Rede Neural é.
+Quanto mais dados, melhor. Vale ressaltar que não podemos usar os dados para teste, somente para treinamento.
+Para equilibrar isso, fazemos 80/20, 80% treinamento 20% teste;
+
+Épocas podem ser mais de uma, ou seja, 80 mil dados vezes 2, serão 2 épocas, esse número varia de acordo com o necessitado.
+Muitas épocas podem causar uma Rede Neural que aprendeu muito e não sabe aprender novos dados.
+Poucas podem causar uma rede que aprendeu pouco demais, mas sabe aprender novos.
+
+Quando treinamos com 80%, precisamos testar os 20%;
+
+FUNÇÕES DE ATIVAÇÃO:
+Cada uma tem seu propósito, mas a mais usada é a ReLU, ela lida bem com as saídas que são abaixo de 0, ex:
+  A saída foi -0,5 e a outra foi 0,78 o que resulta em -0,39
+  a saída da ativação foi -0,31 , o que se tornará positivo fazendo -0 * -0, fazendo com que a ReLU não use todos simultaneamente, mas usará todos em algum momento.
+
+Quando usar qual? 
+Depende da característica do problema.
+
+FUNÇÃO DEGRAU:
+Responde com sim ou não, não se preocuparemos com outros parâmetros.
+
+FUNÇÃO LINEAR:
+Recebe a entrada e multiplica cada peso do neurônio, melhor que a degrau, pois irá retornar valores 0 até 1.
+
+FUNÇÃO SIGMOIDE:
+Os valores variam entre 0 e 1, é voltada para probabilidade, sua função é:
+f(x) = 1/1 + e^-x;
+
+FUNÇÃO SOFTMAX:
+Quando o problema tem mais de uma classe, ela se deriva da SIGMOIDE, sua função é:
+softmax(x) = e^x^i/M (down J) e^x^i
+
+TANGENTE HIPERBÓLICA:
+Esta vai de -1 até 1, tem as análises ampliadas, tendo o dobro de grau.
+
+ReLU:
+Anula valores negativos, ou seja, menor que 0 é 0, maior que 0 é 1, sua função é:
+g(z) = max(0, z) que é a mesma coisa que: {0, x < 0}
+                                          {0, x >= 0}
 
 
-
-
-
-
-
+Busque pesquisar mais um pouco.
