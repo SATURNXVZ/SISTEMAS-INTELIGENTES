@@ -1,0 +1,5 @@
+SCOPE:
+Nós padronizamos toda a estrutura da sequência de caracteres de tamanho igual, ou seja, uma string de 300 caracteres, terá uma matriz y x y;
+
+Tiramos uma sequencial disso, já que elas não fazem diferença mais, tornar isso matemático, é trabalhar da forma certa;
+
