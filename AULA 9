@@ -1,5 +1,63 @@
-SCOPE:
-Nós padronizamos toda a estrutura da sequência de caracteres de tamanho igual, ou seja, uma string de 300 caracteres, terá uma matriz y x y;
+A cada entrada a ia gera um peso sobre o neurônio dentro da rede neural.
+Não podemos saber o peso, é a rede que atribui o peso da sinapse
 
-Tiramos uma sequencial disso, já que elas não fazem diferença mais, tornar isso matemático, é trabalhar da forma certa;
+"Qual a importância disso?", a rede se pergunta, e então a resposta é gerada, com o peso atribuido.
+
+O peso irá para a função de ativação, que é uma equação matemática com base no que se espera (saida 0 ou 1, entre 0 e 1, entre -1 e 1, e etc);
+Esse resultado gera o valor absoluto que determinará se o neurônio ativará ou não.
+
+FUNÇÕES DE ATIVAÇÃO:
+Na aula 8 falamos sobre as funções de ativação, veja para mais informações;
+
+Apartir de vários resultados, podemos utilizar em diversos casos, usando como base requisitos e regras;
+
+
+Função Degrau só retorna 0 ou 1, sendo binária;
+
+Função Linear gera valores ENTRE 0 e 1, não sendo binária;
+  Ela se torna mais adequada devido a sua facilidade em aceitar numeros que não são inteiros.
+
+Função Sigmóide trata PROBABILIDADE, gerando valores entre 0 e 1, aceitando somente números maiores que 0 (positivos);
+
+Função Softmax analisa mais de uma classe, e também aceita números maiores e menores e etc, gerando valores entre 0 e 1;
+
+Função Hiperbólica (pesquise sobre);
+
+Função ReLU é a mais usada, mas também aplicada de forma errônea;
+  ReLU converte mais rápido, anula valores negativos, retornando sempre valor 1, sendo constante;
+  EX: Uma Rede Neural Composta (CNN), aonde ela anula quaisquer neurônios negativos, aonde o resultado final pode ser alterado drásticamente por conta disso;
+  Existem neurônios que precisam ser ativados para ativarem outros, e a ReLU anula os mesmos, se forem negativos;
+  ReLU NÃO PODE SER USADA NA ÚLTIMA CAMADA;
+  As épocas (momento em que todos os neurônios são utilizados, baseando-se em ciclos) podem dar valores diferentes se ReLU estiver em todas as camadas ou nas camadas finais;
+
+TIPOS DE APRENDIZADO:
+(pesquise sobre);
+
+Os tipos são:
+
+SUPERVISIONADO: Usa um conjunto de dados rotulados, ou seja, ele parte com dados de entrada tendo uma saída já programada, rotulando "Se A, então B";
+Ao entrar com A, a saída será B;
+Com isso sabemos se o aprendizado está correto e funcionando da forma que deveria;
+Sempre teremos vetores de atributos, e outro de respostas (saídas, classes);
+  EX: Uma fruta tem atributos, cor, peso, ph e etc, com base no atributo direcionado, pode-se ter a fruta escolhida.
+  Cor = vermelha | Peso = 70g | pg = ? RESPOSTA = MAÇÃ;
+Ela tem um problema: em larga escala, os resultados podem ser errôneos, pois alguns atributos podem não ser relevantes;
+Neste aprendizado, saberemos e teremos controle das respotas, se estão certas ou não, se estão na linha ou não, e então, alterar e ajustar até a Rede Neural acertar;
+Os ajustes se baseam nas épocas e no próprio aprendizado;
+
+NÃO-SUPERVISIONADO: A maior diferença é que não tem como saber a resposta, ou seja, não sei qual é a resposta;
+Por isso, acaba não sendo utilizado, pois não sei o que vai sair e com isso, é mais trabalhoso do que os demais;
+
+
+
+
+
+
+Não supervisionado:
+Com Reforço;
+Nas funções sempre
+  
+
+
+
 
