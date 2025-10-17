@@ -48,6 +48,17 @@ Os ajustes se baseam nas épocas e no próprio aprendizado;
 NÃO-SUPERVISIONADO: A maior diferença é que não tem como saber a resposta, ou seja, não sei qual é a resposta;
 Por isso, acaba não sendo utilizado, pois não sei o que vai sair e com isso, é mais trabalhoso do que os demais;
 
+COM REFORÇO: Ele aprende como faz, o que faz, com o reforço do não errar ou acertar;
+EX: Em um jogo, imagine um personagem que morre várias vezes, até que ele para de errar, chegando ao certo;
+Imagine o reforço igual um cachorro, se fizer isso, ganha isso;
+Se resolver esse problema, ganhará um petisco;
+É inspirado na psicologia comportamental, onde o "jogador" é incentivado ou não com base nas consequências de suas ações;
+o Reforço usa muito loops, pois os erros podem acontecer muito;
+O aprendizado se deve por recompensas ou punições ao agente (jogador, código, algoritmo e etc), por isso se relaciona com a psicologia;
+
+O supervisionado se encaixa mais em regras de associação 
+
+
 
 
 
