@@ -1,1 +1,33 @@
+AUla passada vimos bias, nessa aula veremos o processo de treinamento e implementação.
+
+BIAS ajuda a descobrir se ativa ou não, usando uma faixa de ângulo que deslocará, sendo seu valor positivo ou não, dependendo de qual valor será adicionado;
+
+A reta pode sair da origem, deslocando-se para cima ou para baixo, fazendo com que um problema sem solução, agora pode ter uma;
+
+Aplicar o BIAS em tudo é uma forma muioto eficiente.
+
+Se tiver 2 valores, é apenas 1 bias, é entrada X peso, independente da quantidade, e então soma-se ao bias;
+
+BIAS faz que um neurônio não necessite de tantas épocas, o que facilita o treinamento da sua rede neural;
+Vale ressaltar que o BIAS economiza épocas, trabalho e a deixa mais eficiente;
+
+O BIAS entra em:
+V. de Entrada X V. de peso ... + BIAS;
+
+NUMPY:
+Biblioteca de python que facilita a multiplicação entre vetores/matrizes, utilizando a multiplicação escalar;
+.DOT
+Ex:
+  v = numpy.dot (vetor 1, vetor 2)
+
+vstack(): Verticaliza vetores como se fossem colunas de uma matriz;
+
+Vetores de entrada são representados com x, e os de peso são w;
+Porém, se existir X com indice b, isso significa que o BIAS já está adicionada como se fosse uma entrada normal, porém isso só vale para 1;
+
+
+Como os pesos são ajustados?
+PESQUISE SOBRE;
+
+O Perceptron pode receber vários atributos, porém, cada atributo deve ter um vetor, seja de cor, quantidade ou etc;
 
