@@ -1,0 +1,78 @@
+DEEP LEARNING:
+
+Rede neural simples e profundas tem como principal diferencça a quantia de camadas;
+A simples tem 3, entrada, processamento e saída;
+
+A profunda não se limita a apenas 3, a simples pega algo e joga ela na rede, dizendo que tem e vale tanto ou tal coisa;
+Ex:
+  Esta fruta é verde e com casca;
+E com base nessas features, ela dizerá se é uma fruta, ou se não é;
+As features são entregues para a Rede Neural, daonde ela extrai;
+
+REDE NEURAL PROFUNDA:
+Aqui é diferente; 
+Ex:
+  Uma imagem jogada para ela, perguntando o que está naquela imagem, com base nisso ela extrai as features seguindo sua própria "intuição";
+Não jogo mais as features, é ela que extrai;
+Por isso se torna mais difícil, pois sera minha rede que vai julgar se aquilo é importante ou não;
+
+A principal diferença:
+Simples - Eu dou extraído o que ela precisa;
+Profunda - Não sei o que ela vai extrair;
+
+A profunda não precisa mais que eu extraia, e sim que ela vai fazer sozinha;
+
+Ex:
+  Entreguei uma imagem de vários cachorros, e pedi para a Rede Neural contar quantos deles tem naquela imagem;
+  Para nós, é simples, para a rede:
+    Ver o que é um cachorro naquela imagem, e então contar quantos dele tem;
+  A Rede Neural procura pelo seguinte:
+    uma imagem é uma matriz de cores, no caso, será uma matriz de neurônios, cada pixel sendo um;
+
+Muitas vezes, uma imagem parece simples para nós humanos, identificar cachorros numa imagem, por exemplo;
+Já um código, uma Rede Neural Profunda, uma IA processar quantos alunos tem em uma sala de aula;
+
+A Rede Neural Simples funciona da seguinte forma:
+
+Cada Pixel se tornará um neurônio, quanto mais pixels, mais neurônios e então, mais entradas;
+A rede atribuirá pesos aleatórios, os quais não temos controle;
+Após, entra a função de ativação, seja X1 x W1, mas não segue nenhum padrão;
+Essas entradas vão gerar outras entrada, pois 1 x 1 vai dar outro 1, e assim adiante;
+Esse resultado será multiplicado novamente na função de ativação até 20 x, ou seja:
+  Como se fosse um fatorial de 20, passo 1, ai resultado do 1 x 2, o do 2 x 3 e assim até 20;
+
+Porém, ao gerar outros resultados, 1 x 1 gera outro, que gera outro, isso tem uma taxa de erro;
+
+Podemos propagar isso, corrigindo os erros desde o inicio da nossa rede;
+Por isso, fazemos:
+
+RETRO-PROPAGAÇÃO DO ERRO:
+  Você volta os passos, 1 por 1;
+
+O mais incrível, não sabemos como é feito o reconhecimento de pixels, escolhendo um por um e descartando os que ela acha importante ou não;
+Mesmo o homem que inventou as Redes Neurais não sabe como conseguiu chegar ao resultado original.
+
+A camada anterior gera as entradas da próxima camada;
+
+Não existe nada que diga que toda camada precisa ter a mesma quantia de entradas;
+
+A Rede Neural profunda reconhece sozinha, sem que eu fale nada ou ensine nada.
+
+A parte interna não é explicada, não tem explicação;
+
+O treinamento da Rede Neural Profunda é composta de vários níveis compostos de unidades simples, todas em treinamento, ou seja:
+de 10 mil imagens, 8 mil vai treinamento;
+
+O que uso para treino, não pode ser usado para testes;
+
+quando for testar, pegue uma imagem diferente das dos treinamentos;
+
+As camadas podem ir de 5 a 20 níveis 
+
+Redes Neurais são 2, Redes Convulsionais, as CNN, usadas para imagem e vídeos;
+E as RNN, Redes Recorrentes, usadas para dados contínuos, músicas, voz e áudio;
+
+
+
+
+
