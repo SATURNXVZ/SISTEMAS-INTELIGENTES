@@ -72,6 +72,31 @@ As camadas podem ir de 5 a 20 níveis
 Redes Neurais são 2, Redes Convulsionais, as CNN, usadas para imagem e vídeos;
 E as RNN, Redes Recorrentes, usadas para dados contínuos, músicas, voz e áudio;
 
+Redes Convulativas (CNN):
+Arquitetura por 3 camadas;
+Convulativas;
+Pooling;
+Totalmente Conectadas;
+
+Sempre recebemos uma imagem ou no caso do vídeo, extraído uma imagem, o frame dele;
+
+CAMADA COVOLUTIVA:
+É aplicado um conjunto de filtros sob a imagem de entrada, que se torna uma pequena matriz, sendo na grande maioria se tornando 5 x 5;
+Como se fosse um "Molde" que vai se deslocando e scaneando o que é mais importante, reduzindo recursivamente;
+Se pegar uma matriz muito grande, ao invés de uma 3x3 ou 4x4, isso pode perder neurônios importantes.
+Isso também se aplica em passos de deslocamento, 2 é o máximo, 1 é o melhor;
+
+O que não podemos ver, é quantos passos ele andou, não sei se foi um ou mais;
+
+Existem 3 parâmetros, profundidade, passo - espaçamento entre máscaras e (pesquisar)
+
+ZERO-PADDING: Tem sua função em descartar as bordas, dando seus valores como 0, fazendo a rede excluir aquelas escaneamentos, fazendo-a processar o meio da imagem;
+
+Cada pixel terá seu valor pela máscara, usando a porção de cor como especificação;
+
+Quando o passo for 1, o filtro salta 1 posição;
+
+
 
 
 
