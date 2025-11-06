@@ -1,0 +1,44 @@
+Aula passada vimos o tipo de "scanner" que escaneia a nossa imagem, aplicando um filtro;
+
+Uma das vantagens desse filtro que diminui a imagem, é que ele diminui o processamento;
+A desvantagem é não ter solução, já que o scanner pode ter excluído uma parte importante.
+
+Esse filtro pega as partes mais importantes, mas isso pode excluir partes que eram importantes;
+
+O valor que vai ser resumido é o valor da matriz * filtro, como isso é calculado?
+
+0 0 0 0 0   ->  scanner (Filtro) cada vez que passa, você multiplica (0 * 0) + (0 * 1) e faça isso com todo o scanner, depois, crie uma nova matriz com o total;
+0 1 1 1 1
+0 1 1 2 1
+
+É a rede que escolhe o filtro, ela detecta a qual é melhor;
+Se a imagem tiver muita curva, um filtro de linhas retas não será o melhor;
+
+Os filtros ajustam contornos, bordas, e depois vai indo pro centro da imagem;
+Ele extrai, e mantém o que acha mais valioso e continua dando passos com o scanner;
+
+A imagem em questão começa grande, e então vai reduzindo, passo após passo;
+
+Em cima de cada pixel resultante é aplicado uma função ReLU.
+
+A redução de dimensão das imagens tem como nome principal as camadas de MAX POOLING, aonde a imagem fica menor devido a convolução, função de ativação e assim por diante;
+
+Em um quadrante, escolho um deles, e ao formar 4 partes de uma imagem, uno esses 4 quadrantes, formando um novo, mas menor e com somente os principais;
+
+A cada passo de convolução, meu scanner pega as principais, porém, não use convoluções demais, o máximo é 20, mas priorize o melhor resultado, não a quantidade;
+
+O mais incrível é que eu não digo o que é a imagem, daonde ela veio, qual seu contexto.
+É a REDE NEURAL que decide;
+
+A última camada não pode ser a ReLU, pois ela descarta valores negativos, igualando todos os numeros menores que 0, à 0, ou seja:
+-1 = 0
+-2 = 0
+
+DROPOUT: técnica usada nas camadas totalmente conectadas, usada pra reduzir o tempo de treinamento, da seguinte forma:
+A cada iteração, ela remove uma porcentagem dos neurônios de uma camada, na outra época, coloca novamente em outro local, redistribuindo-os;
+Ele só pode ser usado nos treinamentos, mas nos testes não;
+
+
+
+
+
